@@ -1,14 +1,14 @@
 # SVRET: save returned results to your dataset
 
-- Current version: `1.1 2jan2019`
+- Current version: `1.0.1 3apr2010`
 - Jump to: [`updates`](#recent-updates) [`install`](#install) [`description`](#description) [`author`](#author)
 
 -----------
 
 ## Updates:
 
-* **January 2, 2019**
-  - Added ```replace``` and ```append``` options
+* **April 3, 2010**
+  - Added backwards compatibility for Stata 8.2
 
 ## Install:
 
