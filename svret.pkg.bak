@@ -1,0 +1,6 @@
+v 3
+d svret. Extract and store regression results.
+d Julian Reif, University of Illinois (jreif@illinois.edu)
+
+f /src/svret.ado
+f /src/svret.hlp

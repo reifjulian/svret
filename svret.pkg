@@ -1,0 +1,6 @@
+v 3
+d svret. Save returned resuts to your dataset.
+d Julian Reif, University of Illinois (jreif@illinois.edu)
+
+f /src/svret.ado
+f /src/svret.hlp
