@@ -1,40 +1,33 @@
-# REGSAVE: extract and store regression results
+# SVRET: save returned results to your dataset
 
-- Current version: `1.4.4 16may2018`
+- Current version: `1.1 2jan2019`
 - Jump to: [`updates`](#recent-updates) [`install`](#install) [`description`](#description) [`author`](#author)
 
 -----------
 
 ## Updates:
 
-* **December 31, 2018**
-  - Added the help file `regsave_tbl.hlp` to installation package
-  - Added error catching code to `regsave_tbl.ado`
+* **January 2, 2019**
+  - Added ```replace''' and ```append''' options
 
 ## Install:
 
-Type `which regsave` at the Stata prompt to determine which version you have installed. To install the most recent version of `regsave`, copy/paste the following line of code:
+Type `which svret` at the Stata prompt to determine which version you have installed. To install the most recent version of `svret`, copy/paste the following line of code:
 
 ```
-net install regsave, from("https://raw.githubusercontent.com/reifjulian/regsave/master") replace
+net install svret, from("https://raw.githubusercontent.com/reifjulian/svret/master") replace
 ```
 
 To install the version that was uploaded to SSC, copy/paste the following line of code:
 ```
-ssc install regsave, replace
+ssc install svret, replace
 ```
 
 These two versions are typically synced, but occasionally the SSC version may be slightly out of date.
 
 ## Description: 
 
-`regsave` is a [Stata](http://www.stata.com) command that fetches estimation results from `e()` and stores them in "wide" format (default) or "table" format:
-
-- By default, results are stored in wide format. Use this format when you want to further analyze your regression results using Stata.
-
-- If you specify the `table()` option, results are stored in table format.  You can then outsheet those results to a text file, or use texsave (if installed) to output your table in LaTeX format (see example 6 below). Use the `table()` option when you want to create a publication-quality table.
-
-The helper command `regsave_tbl` converts the dataset in memory from wide format to table format.
+`svret` is a [Stata](http://www.stata.com) command that replaces the dataset in memory with the scalars and macros stored in ```e()```, ```r()```, and ```s()```.
 
 For more details, see the Stata help file included in this package.
 
