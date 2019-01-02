@@ -8,7 +8,7 @@
 ## Updates:
 
 * **January 2, 2019**
-  - Added ```replace''' and ```append''' options
+  - Added ```replace``` and ```append''' options
 
 ## Install:
 
