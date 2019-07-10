@@ -3,9 +3,8 @@
 * 1.0.1: added backwards compatibility for Stata 8.2. Changed class option to type option
 
 program define svret, nclass
-
 	version 8.2
-	syntax [namelist] [using/], [long type(name) keep(string) format(string) replace append]
+	syntax [namelist], [long type(name) keep(string) format(string)]
 	
 	***			
 	* Error check the options
@@ -52,12 +51,6 @@ program define svret, nclass
 			di as err "format() option invalid"
 			exit 198
 		}
-	}
-	
-	* 5) File options - not currently implemented
-	if "`append'`replace'"!="" & "`using'"=="" {
-		di as error "Must specify a filename with `append'`replace'"
-		exit 198
 	}	
 	
 	****
